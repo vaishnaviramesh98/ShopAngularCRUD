@@ -13,7 +13,7 @@ import { ViewProductComponent } from './view-product/view-product.component';
 
 const routes: Routes = [
   { path: '',
-   component: ProductsComponent },
+   component:ViewAllProductComponent },
   {
     path:'create-product',
     component:CreateProductComponent
@@ -22,10 +22,10 @@ const routes: Routes = [
   //   path:'view-product',
   //   component:ViewProductComponent
   // },
-  {
-    path:'list-products',
-    component:ViewAllProductComponent
-  },
+  // {
+  //   path:'list-products',
+  //   component:ViewAllProductComponent
+  // },
   {
     path:'search',
     component:ViewAllProductsByCategoryComponent
