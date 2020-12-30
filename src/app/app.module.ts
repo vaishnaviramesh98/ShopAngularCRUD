@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 //importing orders module step 1
 import { OrdersModule } from './orders/orders.module';
 import { SiteFrameworkModule } from './site-framework/site-framework.module';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +15,9 @@ import { SiteFrameworkModule } from './site-framework/site-framework.module';
     BrowserModule,
     AppRoutingModule,
     OrdersModule, //add module into array of imports step 2
-    SiteFrameworkModule
+    SiteFrameworkModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
