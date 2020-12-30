@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 //importing orders module step 1
 import { OrdersModule } from './orders/orders.module';
+import { SiteFrameworkModule } from './site-framework/site-framework.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { OrdersModule } from './orders/orders.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OrdersModule //add module into array of imports step 2
+    OrdersModule, //add module into array of imports step 2
+    SiteFrameworkModule
   ],
   providers: [],
   bootstrap: [AppComponent]
